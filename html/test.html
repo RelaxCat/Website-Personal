@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <h1>My PDF</h1>
+    <p>This is a sample HTML content that will be converted to PDF.</p>
+
+    <button id="downloadPdf">Download PDF</button>
+</body>
+<script>
+    document.getElementById('downloadPdf').addEventListener('click', function () {
+        // Initialize jsPDF
+        const pdf = new jsPDF();
+
+        // Get the HTML content to be converted to PDF
+        const body = document.body;
+
+        // Generate the PDF
+        pdf.html(body, {
+            callback: function (pdf) {
+                // Save or display the generated PDF
+                pdf.save('document.pdf');
+            }
+        });
+    });
+</script>
+
+</html>
