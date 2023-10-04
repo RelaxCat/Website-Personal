@@ -43,7 +43,7 @@ function latestProjectList() {
 
             const projectId = project.projectId;
 
-            window.location.href = `/html/project-detail.html?projectId=${projectId}`;
+            window.location.href = `../html/project-detail.html?projectId=${projectId}`;
         });
 
         latestContainer.appendChild(latestCard);
@@ -115,7 +115,7 @@ function projectList() {
 
                     const projectId = project.projectId;
 
-                    window.location.href = `/html/project-detail.html?projectId=${projectId}`;
+                    window.location.href = `../html/project-detail.html?projectId=${projectId}`;
                 });
 
                 projectContainer.appendChild(projectCard);
