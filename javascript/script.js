@@ -1,5 +1,5 @@
 $(function () {
-    $("#header").load("/model/header.html", function () {
+    $("#header").load("../model/header.html", function () {
         var currentPath = window.location.pathname;
         var currentPage = currentPath.substring(currentPath.lastIndexOf('/') + 1);
         currentPage = currentPage.replace(".html", "");
@@ -26,6 +26,6 @@ $(function () {
 
     });
     
-    $("#footer").load("/model/footer.html", function () {});
+    $("#footer").load("../model/footer.html", function () {});
 
 });
