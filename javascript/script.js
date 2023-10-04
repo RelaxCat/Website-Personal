@@ -3,7 +3,7 @@ $(function () {
         var currentPath = window.location.pathname;
         var currentPage = currentPath.substring(currentPath.lastIndexOf('/') + 1);
         
-        if (currentPage = "index.html") {
+        if (currentPage === "index.html") {
             currentPage.replace("index", "home");
         }
         
