@@ -2,15 +2,16 @@ $(function () {
     $("#header").load("../model/header.html", function () {
         var currentPath = window.location.pathname;
         var currentPage = currentPath.substring(currentPath.lastIndexOf('/') + 1);
-        
-        if (currentPage == "index.html") {
-            currentPage.replace("index", "home");
-        }
-        
         currentPage = currentPage.replace(".html", "");
+        $(".navbar-item").removeClass("active");
 
-        document.getElementById(currentPage).classList.add("active");
-
+        // Add the "active" class to the current page's navbar item
+        if (currentPage !== "") {
+            document.getElementById(currentPage).classList.add("active");
+        } else {
+            // If it's the home page, make sure "Home" is not active
+            document.getElementById("home").classList.remove("active");
+        }
         const mobileMenuButton = document.getElementById('hamburger');
         console.log(mobileMenuButton);
         const mobileMenu = document.getElementById('mobile-menu');
