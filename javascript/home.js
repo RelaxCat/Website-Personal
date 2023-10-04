@@ -19,9 +19,9 @@ function featuredProjectList() {
 
         const cardHTML = featureCardTemplate
             .replace("{{projectId}}", project.projectId)
-            .replace("{{projectImage}}", project.projectImage || "/Asset/default-image.jpg")
-            .replace("{{projectName}}", project.projectName || "Untitled Project")
-            .replace("{{projectDescription}}", project.projectDescription || "No description available");
+            .replace("{{projectImage}}", project.projectImage)
+            .replace("{{projectName}}", project.projectName)
+            .replace("{{projectDescription}}", project.projectDescription);
 
         const featureCard = document.createElement("div");
         featureCard.className = "feature-card";

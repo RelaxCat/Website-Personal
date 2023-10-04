@@ -1,5 +1,5 @@
 $(function () {
-    $("#header").load("/model/header.html", function () {
+    $("#header").load("../model/header.html", function () {
         const mobileMenuButton = document.getElementById('hamburger');
         console.log(mobileMenuButton);
         const mobileMenu = document.getElementById('mobile-menu');
@@ -21,7 +21,7 @@ $(function () {
 
     });
     
-    $("#footer").load("/model/footer.html", function () {});
+    $("#footer").load("../model/footer.html", function () {});
 });
 
 function myFunction(img) {

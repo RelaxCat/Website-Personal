@@ -2,7 +2,13 @@ $(function () {
     $("#header").load("../model/header.html", function () {
         var currentPath = window.location.pathname;
         var currentPage = currentPath.substring(currentPath.lastIndexOf('/') + 1);
+        
+        if (currentPage = "index.html") {
+            currentPage.replace("index", "home");
+        }
+        
         currentPage = currentPage.replace(".html", "");
+
         document.getElementById(currentPage).classList.add("active");
 
         const mobileMenuButton = document.getElementById('hamburger');

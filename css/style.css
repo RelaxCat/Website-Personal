@@ -684,7 +684,7 @@ footer{
     width: 15%;
     height: 50%;
     margin-right: 3%;
-    content: url("/Asset/download-icon.png");
+    content: url("../Asset/download-icon.png");
 }
 
 .download-project:hover{
@@ -694,7 +694,7 @@ footer{
 }
 
 .download-project:hover .logo-dl{
-    content: url("/Asset/download-icon\ -\ white.png");
+    content: url("../Asset/download-icon\ -\ white.png");
 }
 
 .back-project{
