@@ -42,7 +42,7 @@ function featuredProjectList() {
 
             const projectId = project.projectId;
 
-            window.location.href = `/html/project-detail.html?projectId=${projectId}`;
+            window.location.href = `../html/project-detail.html?projectId=${projectId}`;
         });
 
         featureContainer.appendChild(featureCard);
